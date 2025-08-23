@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="styles.css" />
-
-    <title>Estatein</title>
+    <title>Properties</title>
   </head>
   <body>
     <header class="header wrapper">
@@ -20,7 +18,7 @@
             <a href="about-us.html" class="nav-links">About Us</a>
           </li>
           <li>
-            <a href="properties.html" class="nav-links">Properties</a>
+            <a href="#" class="nav-links">Properties</a>
           </li>
           <li>
             <a href="#" class="nav-links">Services</a>
@@ -31,84 +29,99 @@
       <a href="#" class="nav-links contact-btn">Contact Us</a>
     </header>
     <main class="main wrapper">
-      <section class="hero wrapper">
-        <div class="two-columns">
-          <div class="left-column">
-            <h1 class="hero-heading">
-              Discover Your Dream Property with Estatein
-            </h1>
-            <p class="subtext">
-              Your journey to finding the perfect property begins here. Explore
-              our listings to find the home that matches your dreams.
-            </p>
-
-            <!-- hero buttons -->
-
-            <div class="buttons">
-              <a href="#" class="btn-primary">Learn More</a>
-              <a href="#" class="btn-secondary">Browse Properties</a>
-            </div>
-
-            <!-- hero cards -->
-
-            <div class="card-container">
-              <div class="card">
-                <h2 class="hero-sub-heading">200+</h2>
-                <p class="subtext">Happy Customers</p>
-              </div>
-              <div class="card">
-                <h2 class="hero-sub-heading">10k+</h2>
-                <p class="subtext">Properties For Clients</p>
-              </div>
-              <div class="card">
-                <h2 class="hero-sub-heading">16+</h2>
-                <p class="subtext">Years Of Experience</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- right column -->
-
-          <div class="right-column">
-            <img src="assets/hero-img.png" alt="" />
-          </div>
-
-          <!-- bottom of hero section card containers -->
+      <section class="properties-hero">
+        <div class="properties-header">
+          <h1 class="properties-heading">Find Your Dream Property</h1>
+          <p class="subtext">
+            Welcome to Estatein, where your dream property awaits in every
+            corner of our beautiful world. Explore our curated selection of
+            properties, each offering a unique story and a chance to redefine
+            your life. With categories to suit every dreamer, your journey
+          </p>
         </div>
-        <div class="btm-card-container">
-          <div class="btm-card">
-            <img src="assets/icon-1.png" alt="" />
-
-            <img src="assets/arrow-icon.png" alt="" class="test" />
-
-            <p>Find your dream home</p>
-          </div>
-          <div class="btm-card">
-            <div class="arrow">
-              <img src="assets/arrow-icon.png" alt="" class="test" />
+        <div class="properties-inputs">
+          <div class="container">
+            <div class="search">
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Search for a property"
+              />
+              <div class="btn-container">
+                <img src="assets/search-icon.png" alt="" />
+                <a href="" class="search-btn">Find Property</a>
+              </div>
             </div>
-            <img src="assets/icon-2.png" alt="" />
-            <p>Unlock property value</p>
           </div>
-          <div class="btm-card">
-            <div class="arrow">
-              <img src="assets/arrow-icon.png" alt="" class="test" />
+        </div>
+        <div class="input-container container">
+          <div class="filter location">
+            <div class="option-loc">
+              <button onclick="filterCards('all')">Show All</button>
+              <button onclick="filterCards('philippines')">Philippines</button>
+              <button onclick="filterCards('usa')">USA</button>
+              <button onclick="filterCards('britain')">Britain</button>
             </div>
-            <img src="assets/icon-3.png" alt="" />
-            <p>Effortless Property Management</p>
+            <div class="tag">
+              <img src="assets/location.png" alt="" class="loc" />
+              <p class="subtext">Location</p>
+            </div>
+            <img src="assets/drop-down.png" alt="" class="drop-down" />
           </div>
-          <div class="btm-card">
-            <div class="arrow">
-              <img src="assets/arrow-icon.png" alt="" class="test" />
+          <div class="filter prop-type">
+            <div class="option-prop">
+              <button onclick="filterCards('all')">Show All</button>
+              <button onclick="filterCards('bungalow')">Bungalow</button>
+              <button onclick="filterCards('townhouse')">Town House</button>
+              <button onclick="filterCards('condo')">Condo</button>
             </div>
-            <img src="assets/icon-4.png" alt="" />
-            <p>Smart investment, informed decisions</p>
+            <div class="tag">
+              <img src="assets/property-type.png" alt="" class="p-type" />
+              <p class="subtext">Property Type</p>
+            </div>
+            <img src="assets/drop-down.png" alt="" class="drop-down" />
+          </div>
+          <div class="filter pric-range">
+            <div class="option-range">
+              <button onclick="filterCards('all')">Show All</button>
+              <button onclick="filterCards('1.5mil')">1.5mil</button>
+              <button onclick="filterCards('2mil')">2mil</button>
+              <button onclick="filterCards('3mil')">3mil</button>
+            </div>
+            <div class="tag">
+              <img src="assets/pricing.png" alt="" class="p-range" />
+              <p class="subtext">Pricing Range</p>
+            </div>
+            <img src="assets/drop-down.png" alt="" class="drop-down" />
+          </div>
+          <div class="filter prop-size">
+            <div class="option-size">
+              <button onclick="filterCards('all')">Show All</button>
+              <button onclick="filterCards('2-hectares')">2 hectares</button>
+              <button onclick="filterCards('3-hectares')">3-hectares</button>
+              <button onclick="filterCards('800-sqm')">800 sqm</button>
+            </div>
+            <div class="tag">
+              <img src="assets/property-size.png" alt="" class="p-size" />
+              <p class="subtext">Property Size</p>
+            </div>
+            <img src="assets/drop-down.png" alt="" class="drop-down" />
+          </div>
+          <div class="filter build-year">
+            <div class="option-year">
+              <button onclick="filterCards('all')">Show All</button>
+              <button onclick="filterCards('2023')">2023</button>
+              <button onclick="filterCards('2016')">2016</button>
+              <button onclick="filterCards('2019')">2019</button>
+            </div>
+            <div class="tag">
+              <img src="assets/build-year.png" alt="" class="b-year" />
+              <p class="subtext">Build Year</p>
+            </div>
+            <img src="assets/drop-down.png" alt="" class="drop-down" />
           </div>
         </div>
       </section>
-
-      <!-- featured properties -->
-
       <section class="featured-properties container">
         <img src="assets/twinkling.png" alt="" />
         <div class="section-featured-header">
@@ -131,8 +144,9 @@
         <!-- featured property cards -->
 
         <div class="featured-property-container">
-          <div class="feature-card">
+          <div class="feature-card philippines bungalow 1.5mil 2023 800-sqm">
             <img src="assets/feature-1.png" alt="" />
+            <p class="property-tag">Coastal Escapes - Where Wave Becons</p>
             <h2>Seaside Serenity Villa</h2>
             <p class="subtext">
               A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
@@ -165,8 +179,11 @@
               </div>
             </div>
           </div>
-          <div class="feature-card">
+          <div class="feature-card usa bungalow 1.5mil 2019 800-sqm">
             <img src="assets/feature-2.png" alt="" />
+            <p class="property-tag">
+              Urban Oasis - Life in the Heart of the City
+            </p>
             <h2>Metropolitan Haven</h2>
             <p class="subtext">
               A chic and fully-furnished 2-bedroom apartment with panoramic city
@@ -201,8 +218,11 @@
           </div>
 
           <!-- 2nd card -->
-          <div class="feature-card">
+          <div class="feature-card britain condo 2mil 2019 2-hectares">
             <img src="assets/feature-3.png" alt="" />
+            <p class="property-tag">
+              Countryside Charm - Escape To Nature's Embrace
+            </p>
             <h2>Rustic Retreat Cottage</h2>
             <p class="subtext">
               An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
@@ -237,8 +257,9 @@
           </div>
 
           <!-- 3rd card -->
-          <div class="feature-card">
+          <div class="feature-card britain townhouse 2mil 2016 800-sqm">
             <img src="assets/feature-3.png" alt="" />
+            <p class="property-tag">Coastal Escapes - Where Wave Becons</p>
             <h2>Rustic Retreat Cottage</h2>
             <p class="subtext">
               An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
@@ -271,8 +292,9 @@
               </div>
             </div>
           </div>
-          <div class="feature-card">
+          <div class="feature-card philippines condo 3mil 2016 3-hectares">
             <img src="assets/feature-1.png" alt="" />
+            <p class="property-tag">Coastal Escapes - Where Wave Becons</p>
             <h2>Seaside Serenity Villa</h2>
             <p class="subtext">
               A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
@@ -305,8 +327,9 @@
               </div>
             </div>
           </div>
-          <div class="feature-card">
+          <div class="feature-card usa bungalow 3mil 2016 3-hectares">
             <img src="assets/feature-2.png" alt="" />
+            <p class="property-tag">Coastal Escapes - Where Wave Becons</p>
             <h2>Seaside Serenity Villa</h2>
             <p class="subtext">
               A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
@@ -345,7 +368,7 @@
 
         <div class="page-counter">
           <div class="counter">
-            <p class="counter-text" id="properties-value">1</p>
+            <p class="counter-text" id="value">1</p>
             <p>of 60</p>
           </div>
           <div class="button-counter">
@@ -368,7 +391,7 @@
             <button class="prev prevFeat" id="prev-mobile">
               <img src="assets/previous.png" alt="" />
             </button>
-            <p class="counter-text" id="properties-value_mobile">1</p>
+            <p class="counter-text" id="value_mobile">1</p>
             <p>of 60</p>
             <button class="next nextFeat" id="next-mobile">
               <img src="assets/next.png" alt="" />
@@ -377,305 +400,134 @@
         </div>
       </section>
 
-      <!-- section testimonials -->
-
-      <section class="clients-testimonial container">
+      <section class="contact container">
         <img src="assets/twinkling.png" alt="" />
-        <div class="testimonial-header">
-          <div class="two-columns">
-            <div class="left-column">
-              <h2>What Our Clients Say</h2>
-              <p class="subtext">
-                Read the success stories and heartfelt testimonials from our
-                valued clients. Discover why they chose Estatein for their real
-                estate needs.
+        <h2 class="contact-header">Let's Make it Happen</h2>
+        <p class="subtext">
+          Ready to take the first step toward your dream property? Fill out the
+          form below, and our real estate wizards will work their magic to find
+          your perfect match. Don't wait; let's embark on this exciting journey
+          together.
+        </p>
+        <div class="contact-form-container">
+          <div class="layer">
+            <div>
+              <p>First Name</p>
+              <input
+                type="text"
+                placeholder="Enter First Name"
+                class="input-form"
+              />
+            </div>
+            <div>
+              <p>Last Name</p>
+              <input
+                type="text"
+                placeholder="Enter Last Name"
+                class="input-form"
+              />
+            </div>
+            <div>
+              <p>Email</p>
+              <input type="text" placeholder="Enter Email" class="input-form" />
+            </div>
+            <div>
+              <p>Phone</p>
+              <input
+                type="text"
+                placeholder="Enter Phone Number"
+                class="input-form"
+              />
+            </div>
+          </div>
+          <div class="layer">
+            <div class="property-type">
+              <p>Preferred Location</p>
+              <input
+                type="text"
+                class="input-form"
+                placeholder="Select Location"
+              />
+              <img src="assets/drop-down.png" alt="" class="down" />
+            </div>
+            <div class="property-type">
+              <p>Property Type</p>
+              <input
+                type="text"
+                class="input-form"
+                placeholder="Select Property Type"
+              />
+              <img src="assets/drop-down.png" alt="" class="down" />
+            </div>
+            <div class="property-type">
+              <p>No. Of Bathrooms</p>
+              <input
+                type="text"
+                class="input-form"
+                placeholder="Select No. Of Bathrooms"
+              />
+              <img src="assets/drop-down.png" alt="" class="down" />
+            </div>
+            <div class="property-type">
+              <p>No. Of Bedrooms</p>
+              <input
+                type="text"
+                class="input-form"
+                placeholder="No. Of Bedrooms"
+              />
+              <img src="assets/drop-down.png" alt="" class="down" />
+            </div>
+          </div>
+          <div class="layer">
+            <div class="budget">
+              <p>Budget</p>
+              <input
+                type="text"
+                class="budget input-form"
+                placeholder="Select Budget"
+              />
+              <img src="assets/drop-down.png" alt="" class="budget-btn" />
+            </div>
+            <div>
+              <p>Preferred Contact Method</p>
+              <div class="preferred">
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  class="pref-number"
+                />
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  class="pref-email"
+                />
+                <input type="radio" class="radio1" />
+                <input type="radio" class="radio2" />
+              </div>
+            </div>
+          </div>
+          <div class="layer">
+            <div class="message">
+              <p>Message</p>
+              <input
+                type="text"
+                placeholder="Enter Message"
+                class="input-form message-input"
+              />
+            </div>
+          </div>
+          <div class="layer">
+            <div class="terms">
+              <input type="checkbox" />
+              <p>
+                i agree with <a href="#">Terms of Use</a> and
+                <a href="">Privacy Policy</a>
               </p>
             </div>
-            <div class="right-column">
-              <a href="#" class="btn-primary">View All Testimonials</a>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card-container">
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-            </div>
-            <h3 class="testimonial-heading">Exceptional Service!</h3>
-            <p class="testimonial-text">
-              Our experience with Estatein was outstanding. Their team's
-              dedication and professionalism made finding our dream home a
-              breeze. Highly recommended!
-            </p>
-            <div class="profile">
-              <img src="assets/profile1.png" alt="" />
-              <div class="name-address">
-                <p class="testimonial-text">Wade Warren</p>
-                <p class="subtext">USA, California</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-            </div>
-            <h3 class="testimonial-heading">Efficient and Reliable</h3>
-            <p class="testimonial-text">
-              Estatein provided us with top-notch service. They helped us sell
-              our property quickly and at a great price. We couldn't be happier
-              with the results.
-            </p>
-            <div class="profile">
-              <img src="assets/profile2.png" alt="" />
-              <div class="name-address">
-                <p class="testimonial-text">Emelie Thomson</p>
-                <p class="subtext">USA, Florida</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-            </div>
-            <h3 class="testimonial-heading">Trusted Advisors</h3>
-            <p class="testimonial-text">
-              The Estatein team guided us through the entire buying process.
-              Their knowledge and commitment to our needs were impressive. Thank
-              you for your support!
-            </p>
-            <div class="profile">
-              <img src="assets/profile3.png" alt="" />
-              <div class="name-address">
-                <p class="testimonial-text">John Mans</p>
-                <p class="subtext">USA, Nevada</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-            </div>
-            <h3 class="testimonial-heading">Exceptional Service!</h3>
-            <p class="testimonial-text">
-              Our experience with Estatein was outstanding. Their team's
-              dedication and professionalism made finding our dream home a
-              breeze. Highly recommended!
-            </p>
-            <div class="profile">
-              <img src="assets/profile1.png" alt="" />
-              <div class="name-address">
-                <p class="testimonial-text">Wade Warren</p>
-                <p class="subtext">USA, California</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-            </div>
-            <h3 class="testimonial-heading">Efficient and Reliable</h3>
-            <p class="testimonial-text">
-              Estatein provided us with top-notch service. They helped us sell
-              our property quickly and at a great price. We couldn't be happier
-              with the results.
-            </p>
-            <div class="profile">
-              <img src="assets/profile2.png" alt="" />
-              <div class="name-address">
-                <p class="testimonial-text">Emelie Thomson</p>
-                <p class="subtext">USA, Florida</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-              <img src="assets/star.png" alt="" />
-            </div>
-            <h3 class="testimonial-heading">Trusted Advisors</h3>
-            <p class="testimonial-text">
-              The Estatein team guided us through the entire buying process.
-              Their knowledge and commitment to our needs were impressive. Thank
-              you for your support!
-            </p>
-            <div class="profile">
-              <img src="assets/profile3.png" alt="" />
-              <div class="name-address">
-                <p class="testimonial-text">John Mans</p>
-                <p class="subtext">USA, Nevada</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="page-counter">
-          <div class="counter">
-            <p class="counter-text" id="t-val">1</p>
-            <p>of 10</p>
-          </div>
-          <div class="button-counter">
-            <button class="prev" id="t-prev">
-              <img src="assets/previous.png" alt="" />
-            </button>
-            <button class="next" id="t-next">
-              <img src="assets/next.png" alt="" />
-            </button>
-          </div>
-        </div>
-
-        <!-- mobile layout counter -->
-
-        <div class="page-counter-mobile">
-          <div class="counter">
-            <a href="" class="btn-primary">View all Testimonials</a>
-          </div>
-          <div class="button-counter">
-            <button class="prev" id="t-prev-mob">
-              <img src="assets/previous.png" alt="" />
-            </button>
-            <p class="counter-text" id="t-counter-mobile">1</p>
-            <p>of 60</p>
-            <button class="next" id="t-next-mob">
-              <img src="assets/next.png" alt="" />
-            </button>
+            <a href="" class="btn-secondary">Explore Properties</a>
           </div>
         </div>
       </section>
-
-      <!-- FAQ section -->
-
-      <section class="f-a-q_section container">
-        <img src="assets/twinkling.png" alt="" />
-        <div class="testimonial-header">
-          <div class="two-columns">
-            <div class="left-column">
-              <h2>Frequently Asked Questions</h2>
-              <p class="subtext">
-                Find answers to common questions about Estatein's services,
-                property listings, and the real estate process. We're here to
-                provide clarity and assist you every step of the way.
-              </p>
-            </div>
-            <div class="right-column">
-              <a href="#" class="btn-primary">View All FAQ`s</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ cards -->
-
-        <div class="faq-card-container">
-          <div class="faq-card">
-            <h3 class="faq-card-header">
-              How do I search for properties on Estatein?
-            </h3>
-            <p class="subtext">
-              Learn how to use our user-friendly search tools to find properties
-              that match your criteria.
-            </p>
-            <a href="#" class="btn-primary">Read More</a>
-          </div>
-          <div class="faq-card">
-            <h3 class="faq-card-header">
-              What documents do I need to sell my property through Estatein?
-            </h3>
-            <p class="subtext">
-              Find out about the necessary documentation for listing your
-              property with us.
-            </p>
-            <a href="#" class="btn-primary">Read More</a>
-          </div>
-          <div class="faq-card">
-            <h3 class="faq-card-header">
-              How can I contact an Estatein agent?
-            </h3>
-            <p class="subtext">
-              Discover the different ways you can get in touch with our
-              experienced agents.
-            </p>
-            <a href="#" class="btn-primary">Read More</a>
-          </div>
-          <div class="faq-card">
-            <h3 class="faq-card-header">
-              How do I search for properties on Estatein?
-            </h3>
-            <p class="subtext">How do I search for properties on Estatein?</p>
-            <a href="#" class="btn-primary">Read More</a>
-          </div>
-          <div class="faq-card">
-            <h3 class="faq-card-header">
-              How do I search for properties on Estatein?
-            </h3>
-            <p class="subtext">How do I search for properties on Estatein?</p>
-            <a href="#" class="btn-primary">Read More</a>
-          </div>
-          <div class="faq-card">
-            <h3 class="faq-card-header">
-              How do I search for properties on Estatein?
-            </h3>
-            <p class="subtext">How do I search for properties on Estatein?</p>
-            <a href="#" class="btn-primary">Read More</a>
-          </div>
-        </div>
-
-        <div class="page-counter">
-          <div class="counter">
-            <p class="counter-text" id="faq-value">1</p>
-            <p>of 10</p>
-          </div>
-          <div class="button-counter">
-            <button class="prev" id="faq-prev">
-              <img src="assets/previous.png" alt="" />
-            </button>
-            <button class="next" id="faq-next">
-              <img src="assets/next.png" alt="" />
-            </button>
-          </div>
-        </div>
-
-        <!-- mobile layout counter -->
-
-        <div class="page-counter-mobile">
-          <div class="counter">
-            <a href="" class="btn-primary">View all FAQ`s</a>
-          </div>
-          <div class="button-counter">
-            <button class="prev" id="prev-faq-mobile">
-              <img src="assets/previous.png" alt="" />
-            </button>
-            <p class="counter-text" id="faq-mobile-val">1</p>
-            <p>of 60</p>
-            <button class="next" id="next-faq-mobile">
-              <img src="assets/next.png" alt="" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- start real state journey -->
-
       <section class="start-journey">
         <div class="two-columns">
           <div class="left-column">
@@ -815,6 +667,6 @@
         </div>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="properties.js"></script>
   </body>
 </html>
