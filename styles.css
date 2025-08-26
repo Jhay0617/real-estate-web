@@ -1743,6 +1743,124 @@
     width: 40%;
   }
 }
+/* services */
+@layer services-hero {
+  .services-header {
+    padding: 100px 200px 100px 80px;
+    background: linear-gradient(to right, #262626, transparent 53%);
+  }
+  .services-hero .btm-card-container {
+    margin: 0;
+    box-shadow: 0 0 0 6px #191919;
+  }
+}
+@layer property-value {
+  .h2-heading {
+    font-size: 38px;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+  .value-header {
+    width: 70%;
+  }
+  .property-value {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  .value-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .value-card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 413px;
+    width: 100%;
+    border: 1px solid var(--grey-15);
+    border-radius: 10px;
+  }
+  .value-card:last-of-type {
+    max-width: 846px;
+    width: 100%;
+    background: url(assets/card-bg-prop.png) no-repeat center;
+    background-color: var(--grey-10);
+  }
+  .value-card:last-of-type .value-icon {
+    justify-content: space-between;
+  }
+  .value-card:last-of-type .value-icon .value-p {
+    font-size: 24px;
+  }
+  .value-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .value-p {
+    font-size: 20px;
+    color: var(--white);
+  }
+  .prop-value-icon {
+    padding: 8px;
+    border: 1px solid var(--grey-15);
+    border-radius: 100px;
+  }
+  .smart {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  .smart-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .smart-card {
+    max-width: 412px;
+    width: 100%;
+  }
+  .smart-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    background-color: var(--grey-10);
+    gap: 10px;
+    border-radius: 12px;
+  }
+  .right-card {
+    max-width: 394px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    border: 1px solid var(--grey-15);
+    border-radius: 10px;
+    background-color: var(--grey-8);
+  }
+
+  .smart-card:last-of-type {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background: url(assets/card-bg-prop.png) no-repeat left;
+    background-size: cover;
+    background-color: var(--grey-10);
+    border: 1px solid var(--grey-15);
+    border-radius: 12px;
+  }
+  .smart-card:last-of-type a {
+    text-align: center;
+  }
+}
 /* media queries */
 @media screen and (max-width: 550px) {
   .menu {
