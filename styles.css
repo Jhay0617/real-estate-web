@@ -2593,6 +2593,231 @@
     padding: 10px;
     width: 100%;
   }
+  .services-header {
+    padding: 50px 16px;
+  }
+  .services-hero {
+    margin-top: 50px;
+  }
+  .services-hero .btm-card-container {
+    margin-top: 0;
+  }
+  .contact-us-container {
+    padding: 20px;
+  }
+  .contact-us-container .message {
+    justify-self: center;
+    align-self: center;
+  }
+  .contact-layer {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .message-inpt {
+    max-width: 350px;
+  }
+  .hq-bubbled-text {
+    flex-wrap: wrap;
+  }
+  .team-members {
+    padding: 24px;
+    gap: 10px;
+  }
+  .team-text {
+    grid-column: span 4;
+  }
+  .team-7 {
+    grid-column: span 4;
+  }
+  .properties-header {
+    padding: 50px 16px;
+    background: linear-gradient(to right, #262626, transparent 53%);
+  }
+  .input-container {
+    flex-wrap: wrap;
+  }
+  .properties-hero {
+    background: none;
+    margin-top: 60px;
+  }
+  .properties-inputs::before {
+    top: 36%;
+  }
+  .input-search {
+    width: 100%;
+  }
+  .search {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    background: none;
+  }
+  .properties-inputs .container {
+    padding: 0;
+    margin: 20px auto;
+  }
+  .btn-container a {
+    display: none;
+  }
+  .btn-container {
+    top: 20%;
+  }
+  .contact-form-container {
+    padding: 20px;
+  }
+  .layer {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .input-form {
+    width: 400px;
+  }
+  .pref-number,
+  .pref-email {
+    width: 400px;
+  }
+  .layer .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .preferred {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .radio1,
+  .radio2 {
+    display: none;
+  }
+  .img-clicked {
+    max-width: 67px;
+    width: 100%;
+  }
+  .img-container {
+    overflow: hidden;
+    max-width: 318px;
+    width: 100%;
+    align-self: center;
+  }
+  .features {
+    display: block;
+  }
+  .features .left-side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .classification {
+    flex-wrap: wrap;
+  }
+  .bed:first-of-type {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .bed:nth-of-type(2) {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .bed:last-of-type {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--grey-15);
+    width: 100%;
+  }
+  .features .right-side {
+    width: 100%;
+  }
+  .inquire {
+    display: block;
+  }
+  .inquire .left-inquire {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .inquire .right-inquire {
+    width: 100%;
+    padding: 20px;
+  }
+  .form-info {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .note {
+    flex-direction: column;
+    padding: 24px 20px;
+  }
+  .note .subtext {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 10px;
+    border-top: 1px solid var(--grey-15);
+  }
+  .seaside-pricing {
+    display: block;
+  }
+  .seaside-right {
+    width: 100%;
+  }
+  .seaside-card {
+    padding: 20px;
+  }
+  .seaside-left {
+    margin-bottom: 20px;
+  }
+  .bubbled-text {
+    justify-content: space-between;
+  }
+  .seaside-layer:first-of-type {
+    flex-direction: row;
+  }
+  .seaside-card .fname {
+    width: 100%;
+  }
+  .seaside-card .lname {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--grey-15);
+    padding-top: 10px;
+  }
+  .seaside-layer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .services-header {
+    padding: 50px 16px;
+  }
+  .property-value .value-header {
+    width: 100%;
+  }
+  .value-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .value-card {
+    width: 100%;
+    padding: 24px;
+  }
+  .value-card:last-of-type {
+    align-self: center;
+    justify-content: center;
+    background-size: cover;
+  }
+  .value-card:last-of-type .value-icon {
+    flex-direction: column;
+  }
+  .value-card .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+  .smart {
+    flex-direction: column;
+  }
+  .smart-right {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
   /* wrapper / container width */
